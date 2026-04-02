@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "MiauP3",
+    "slug": "miaup3",
+    "version": "0.3.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#12121f"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "supportsBackgroundAudio": true
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.thebigmiau.miaup3",
+      "versionCode": 3,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#12121f"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "category": [
+            "DEFAULT",
+            "BROWSABLE"
+          ],
+          "data": [
+            {
+              "mimeType": "audio/mpeg"
+            },
+            {
+              "mimeType": "audio/mp4"
+            },
+            {
+              "mimeType": "audio/flac"
+            },
+            {
+              "mimeType": "audio/ogg"
+            },
+            {
+              "mimeType": "audio/wav"
+            },
+            {
+              "mimeType": "audio/*"
+            }
+          ]
+        }
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5dd42217-e13e-4159-aaf0-70b7c0f53e6a"
+      }
+    }
+  }
+}
