@@ -20,6 +20,14 @@
           "microphonePermission": false,
           "supportsBackgroundAudio": true
         }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": false,
+          "savePhotosPermission": false,
+          "isAccessMediaLocationEnabled": true
+        }
       ]
     ],
     "android": {
@@ -35,35 +43,19 @@
         "android.permission.READ_MEDIA_AUDIO",
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
-        "android.permission.RECORD_AUDIO",
         "android.permission.MODIFY_AUDIO_SETTINGS"
       ],
       "intentFilters": [
         {
           "action": "VIEW",
-          "category": [
-            "DEFAULT",
-            "BROWSABLE"
-          ],
+          "category": ["DEFAULT", "BROWSABLE"],
           "data": [
-            {
-              "mimeType": "audio/mpeg"
-            },
-            {
-              "mimeType": "audio/mp4"
-            },
-            {
-              "mimeType": "audio/flac"
-            },
-            {
-              "mimeType": "audio/ogg"
-            },
-            {
-              "mimeType": "audio/wav"
-            },
-            {
-              "mimeType": "audio/*"
-            }
+            { "mimeType": "audio/mpeg" },
+            { "mimeType": "audio/mp4" },
+            { "mimeType": "audio/flac" },
+            { "mimeType": "audio/ogg" },
+            { "mimeType": "audio/wav" },
+            { "mimeType": "audio/*" }
           ]
         }
       ]
